@@ -15,4 +15,6 @@
 - 浏览器 console error/warn：空。
 - 临时视口已恢复；本地预览服务仅验收使用。
 
-尚未验证：真实 GitHub Pages URL 和 Actions 运行。当前 GitHub 浏览器需要登录；连接器不能创建仓库或配置 Pages。不能把本地验收视为线上发布成功。
+2026-10-06 已补充线上验收：[https://vergegung.github.io/tp53-interpreter/](https://vergegung.github.io/tp53-interpreter/)。GitHub Actions validate/deploy均成功，云端13组测试通过；Safari实际加载、SHA256数据门控、默认三突变评分、三项等权切换、非错义机制和三种实际下载文件核对通过。在线浏览器 error/warn 为空。部署和云端测试日志另存于 qa/cloud_*_20261006.txt；线上截图与下载记录位于本地 qa/deployment_20261006/。
+
+云端记录：[https://github.com/Vergegung/tp53-interpreter/actions/runs/37434429493](https://github.com/Vergegung/tp53-interpreter/actions/runs/37434429493)。
