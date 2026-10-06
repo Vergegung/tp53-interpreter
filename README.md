@@ -1,5 +1,9 @@
 # TP53 Variant Atlas v0.4
 
+**在线解读器：[打开网站](https://vergegung.github.io/tp53-interpreter/)** · [源代码仓库](https://github.com/Vergegung/tp53-interpreter)
+
+2026-10-06 已完成 GitHub Pages 发布和真实 URL 验收。[云端测试与部署](https://github.com/Vergegung/tp53-interpreter/actions/runs/37434429493)均成功，13 组测试通过。Safari 已验证数据加载；线上查询、权重、非错义机制及 JSON/SVG/Markdown 导出均通过核对。
+
 TP53 结构、功能与显性负性的分层研究评估。浏览器直接计算，GitHub Pages 托管，无需用户启动 Python、安装软件或运行本地服务。
 
 新版统一显示：原始值与来源内百分位 → 按实验家族汇总的结构 / 功能 / DNE 分项 → 可调整权重的综合研究指数。缺失与多记录歧义传播为区间，非 missense 进入序列机制路线。详细公式、来源分母、适用性与局限见 [METHODS.md](docs/METHODS.md)。
