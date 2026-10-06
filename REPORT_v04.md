@@ -2,12 +2,14 @@
 tags: [TP53, 结构功能, 解读器, GitHub, 分层量化]
 date: 2026-10-06
 project: TP53 Variant Atlas
-status: 软件与本地浏览器已核验_线上发布待登录
+status: 云端测试通过_已上线且完成线上验收
 ---
 
 # TP53 解读器 v0.4：分层量化与统一评估
 
-已经完成浏览器版解读器：原始证据、结构/功能/DNE 分项和综合研究指数均可追溯；GitHub Actions 测试与 Pages 发布工作流已准备。真实线上发布尚未完成，当前阻断是 GitHub 浏览器未登录，现有连接器不能新建仓库或配置 Pages。
+已经完成浏览器版解读器：原始证据、结构/功能/DNE 分项和综合研究指数均可追溯；GitHub Actions 测试与 Pages 发布工作流已准备。2026-10-06 已创建专用公开仓库并通过 GitHub Actions 发布。真实在线 URL 的数据校验、默认评分、权重切换、非错义机制与三种导出均已验收。
+
+在线网站：[https://vergegung.github.io/tp53-interpreter/](https://vergegung.github.io/tp53-interpreter/)；[云端测试与部署记录](https://github.com/Vergegung/tp53-interpreter/actions/runs/37434429493)。
 
 ## 数据合同与范围
 
@@ -58,7 +60,7 @@ L3 默认 I=0.25S+0.50F+0.25D，另提供三项等权与结构优先预设，以
 | 1 | 公共分子数据投影、gzip、SHA256 门控、浏览器 HGVS | 7,467 参考替换及来源快照一致 | 补充分层汇总 |
 | 2 | 家族平衡、总指数、缺失/歧义范围、可调权重 | 单例公式、范围、权重、不借用邻近替换测试通过 | 核对完整变异空间 |
 | 3 | 3,546 SNV、4,716 两转录本 indel 与 Python 独立夹具比对 | 全部后果一致；32 代表变异轴/NMD 一致；13 组测试通过 | 检查浏览器与全量覆盖 |
-| 4 | 桌面/手机排版、中文机制解释、真实导出、7,467 全量审计及出版级图 | 浏览器错误/警告为空；导出三文件已核对；PNG 实际600.10 DPI，PDF Arial TrueType嵌入且无位图 | 线上 URL 未验证；待 GitHub 登录后完成发布 |
+| 4 | 桌面/手机排版、中文机制解释、真实导出、7,467 全量审计及出版级图 | 浏览器错误/警告为空；导出三文件已核对；PNG 实际600.10 DPI，PDF Arial TrueType嵌入且无位图 | 云端13组测试通过；真实URL数据加载、权重、机制与导出验收通过 |
 
 科研图 Fig_v04_hierarchical_index_audit 包含六个代表突变的权重敏感性、7,467 个覆盖分布、1,124 个可显示记录的兼容范围。PNG+PDF+SVG 均保存，图中文字为英文，Nature 配色，PDF 字体可编辑；首轮图例与标题重叠已修正并再次渲染检查。
 
@@ -69,17 +71,17 @@ L3 默认 I=0.25S+0.50F+0.25D，另提供三项等权与结构优先预设，以
 3. **缺失是否被误认为正常或功能完全丧失？** 没有：缺失保留状态与兼容范围；非错义没有匹配实验就不显示总指数。覆盖是完整度，不是准确率。核验通过。
 4. **默认权重与60%门槛是否经过验证？** 尚未。这些是本版预设显示规则，不应用于临床决策；不同权重可能改变排序，敏感性 CSV 和图完整保存。可接受局限。
 5. **结构分类能否直接预测药物？** 不能。DNA 接触型不作为 APR-246 无效硬规则，锌缺陷不推出 ZMC1 临床优越，截断不推出零蛋白。机制依据见 METHODS.md 中原始研究。核验通过。
-6. **本地浏览器通过是否等于 GitHub 网站发布成功？** 不等于。尚无部署成功记录或在线 URL 验收，不宣称已上线。登录属于外部状态阻断。
+6. **本地浏览器通过是否等于 GitHub 网站发布成功？** 不等于。现已补齐真实部署成功记录和在线 URL 验收；不把单独的本地测试当作上线证据。核验通过。
 
 ## GitHub 发布状态
 
 已准备无 npm 依赖的静态网站和测试；Actions 先测试，再发布 docs/ 到 Pages。根据 [GitHub 官方 Pages 文档](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)，访问者直接用浏览器；该网站不需要 Python 服务。仓库设置需选择 Pages Source=GitHub Actions，流程见 README.md 与 [官方工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
 
-已连接的 GitHub 账户为 Vergegung。建议专用 tp53-interpreter 仓库；现有 R-lauguage-Bio-Oncology 为空，但未擅自改作此项目。GitHub 新建仓库登录页已打开供用户完成认证。没有读取/发送密码，也未创建、上传或发布远端仓库。
+专用仓库为 [Vergegung/tp53-interpreter](https://github.com/Vergegung/tp53-interpreter)，原始发布提交 f2e6eae8382d7fcf2c80c809c75fac9d9bcbc559。23 个上传文件的 Git blob SHA 与本地核验文件逐一一致。Pages Source 已设置为 GitHub Actions，验证和部署两个作业成功。公开站点包含公共分子数据，患者数据未上传。用户在 Safari 完成登录，未读取或发送密码。
 
 ## 后续验证
 
-1. 完成专用仓库发布后，核对 Actions 成功状态并在真实 URL 复测加载、单例与批量查询、权重和导出。
+1. 后续更新继续使用 Actions 校验后部署；保留来源快照、评分规则和线上验收记录。
 2. 优先补充结构实测及具有核苷酸身份的独立功能资料；新来源进入新版本，保留旧快照。
 3. 冻结分子评分规则和权重，再以独立 PDO/RNAseq 验证分项与实验表型；避免同源数据自我验证。
 4. 临床终点阶段另建数据合同，先清洗再验证，当前不训练临床风险/药物疗效模型。
@@ -91,7 +93,7 @@ L3 默认 I=0.25S+0.50F+0.25D，另提供三项等权与结构优先预设，以
 - [x] 13 组测试通过；全量覆盖审计和代表变异敏感性已保存。
 - [x] PNG ≥600 DPI、可编辑 PDF、SVG；实际渲染检查通过。
 - [x] 中文报告、方法、核验记录与可复现脚本齐全。
-- [ ] 真实 GitHub 仓库与 Pages 发布成功记录：待登录。
+- [x] 专用 GitHub 仓库、Actions测试与Pages部署成功；真实URL验收通过。
 - [ ] PDO/RNAseq/临床外部校准：按用户指示后置。
 
 本阶段未进行临床统计检验；P值、效应量和多重比较校正不适用。
