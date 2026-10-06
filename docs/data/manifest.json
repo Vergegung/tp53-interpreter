@@ -1,0 +1,240 @@
+{
+  "version": "0.4.0",
+  "molecular_snapshot": "df49d0a729ef02bb7661df2bce7b9245fdfbf6b77c88017615a6d324b16b676f",
+  "source_versions": {
+    "tp53db": {
+      "version": "R21 (Jan 2025)",
+      "scope": "NCI-curated functional evidence; historical epidemiology",
+      "files": [
+        {
+          "name": "MutationView_r21.csv",
+          "url": "https://tp53.cancer.gov/static/data/MutationView_r21.csv",
+          "bytes": 9538002,
+          "md5": "b714f1b96826601abf1f2d9e94d12735",
+          "sha256": "bc7945fbccd1924ccfc35c37b37b932eb7f33ef01c2e1cdf8f72f8a3432e5811"
+        },
+        {
+          "name": "FunctionDownload_r21.csv",
+          "url": "https://tp53.cancer.gov/static/data/FunctionDownload_r21.csv",
+          "bytes": 3012924,
+          "md5": "05ad8799325779aeebaed1c8ea9bd57d",
+          "sha256": "3637c3a9b98f061bd21a89e80c6821ef5e10886931618911616cbbbb5c25fbe4"
+        },
+        {
+          "name": "FunctionIshiokaDownload_r21.csv",
+          "url": "https://tp53.cancer.gov/static/data/FunctionIshiokaDownload_r21.csv",
+          "bytes": 162528,
+          "md5": "490653811c472b76adea63f3aa0c80d3",
+          "sha256": "e0a3360999388a77974eae6202518c2a408c2c8c00c82f8a6f1f112f717f29b0"
+        }
+      ],
+      "terms": "https://www.cancer.gov/policies/disclaimer",
+      "source_id": "tp53db",
+      "downloaded_at": "2026-10-05T20:55:24.241765+08:00",
+      "validated_at": "2026-10-06T13:39:14.849938+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "uniprot": {
+      "version": {
+        "firstPublicDate": "1987-08-13",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2009-11-24",
+        "entryVersion": 315,
+        "sequenceVersion": 4
+      },
+      "scope": "P04637 canonical sequence/features",
+      "files": [
+        {
+          "name": "P04637.json",
+          "url": "https://rest.uniprot.org/uniprotkb/P04637.json",
+          "bytes": 874741,
+          "md5": "bcf35ca00dc3cd3a1ed007088e4d8668",
+          "sha256": "6bdb471fae5b0d4c92a1e2fd63f35b49e3826188e82ff54fcddec70c4e63e114"
+        }
+      ],
+      "terms": "https://www.uniprot.org/help/license",
+      "source_id": "uniprot",
+      "downloaded_at": "2026-10-05T20:55:24.250258+08:00",
+      "validated_at": "2026-10-06T13:39:14.857971+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "refseq": {
+      "version": "NM_000546.5 and NM_000546.6",
+      "scope": "reference CDS equivalence",
+      "files": [
+        {
+          "name": "NM_000546.5.gb",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000546.5&rettype=gb&retmode=text",
+          "bytes": 39677,
+          "md5": "8c81228ab9cbe688c8d0343529ad68d4",
+          "sha256": "b0921f5c4f95b0591514c2681b0ab8dfc4b75d198f6199036e78d5988791e2fe"
+        },
+        {
+          "name": "NM_000546.6.gb",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000546.6&rettype=gb&retmode=text",
+          "bytes": 37805,
+          "md5": "ebf9dc1d6cd95d3db9c7753d3f76f38a",
+          "sha256": "c14355676c0755f9e552a398f2545c2a0c2ebe889a038f913858df7eebe92be7"
+        }
+      ],
+      "terms": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "source_id": "refseq",
+      "downloaded_at": "2026-10-05T20:55:24.257527+08:00",
+      "validated_at": "2026-10-06T13:39:14.864612+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "giacomelli": {
+      "version": "2018 Supplementary Table 3; PMID 30224644",
+      "scope": "three assay-specific Z-scores",
+      "files": [
+        {
+          "name": "TableS3.xlsx",
+          "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41588-018-0204-y/MediaObjects/41588_2018_204_MOESM6_ESM.xlsx",
+          "bytes": 1753248,
+          "md5": "8f79ba5222e4d1a23c0e64288026f424",
+          "sha256": "b75373c3e8ab4b587db570399e56d3f965707fcbfc82cf8d35621f5d7b65f45a"
+        }
+      ],
+      "terms": "https://www.nature.com/articles/s41588-018-0204-y",
+      "source_id": "giacomelli",
+      "downloaded_at": "2026-10-05T20:55:24.444331+08:00",
+      "validated_at": "2026-10-06T13:39:15.008040+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "clingen": {
+      "version": "GN009 v2.4",
+      "scope": "LFS germline functional criteria, not a somatic treatment classifier",
+      "files": [
+        {
+          "name": "GN009_current.html",
+          "url": "https://cspec.genome.network/cspec/ui/svi/svi/GN009",
+          "bytes": 362208,
+          "md5": "b8656ae7e197099875d74215971dd32d",
+          "sha256": "8252fd004d4b25e90b9611c3704a35f54527e8323fa95175023ab00b852927af"
+        },
+        {
+          "name": "functional_assays.xlsx",
+          "url": "https://cspec.genome.network/cspec/File/id/f7b4de92-567a-497d-a8db-0f673c8bb36c/data",
+          "bytes": 148224,
+          "md5": "11e7925f377cf80495066835cccbfa4c",
+          "sha256": "fd2f99108e87ff89435d99be7da97ff39e99acca4c2c770213088d0f8aedbb42"
+        }
+      ],
+      "terms": "https://clinicalgenome.org/docs/terms-of-use/",
+      "source_id": "clingen",
+      "downloaded_at": "2026-10-05T20:55:24.521925+08:00",
+      "validated_at": "2026-10-06T13:39:15.121794+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "kotler": {
+      "version": {
+        "urn": "urn:mavedb:00000059-a-1",
+        "published_date": "2021-01-18",
+        "modified_date": "2026-06-30",
+        "experiment_year": 2018
+      },
+      "scope": "H1299 DBD cell growth RFS; fragment coordinates and repeated protein identities preserved",
+      "files": [
+        {
+          "name": "score_set.json",
+          "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000059-a-1",
+          "bytes": 8981,
+          "md5": "5c67a928f1fa30a70126fcce9f0751e5",
+          "sha256": "29b61390d6c6f7ad1c3b657dde126494e39cc7cba659429aef6d0a72283b0b33"
+        },
+        {
+          "name": "scores.csv",
+          "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000059-a-1/scores",
+          "bytes": 588703,
+          "md5": "c4c56b1fec15e88d7ab9ff106cf757be",
+          "sha256": "a58f9f7d3fa70fe2dbf1ae347fb5fc46280a68f98d9d042d108ee707fe64ff41"
+        }
+      ],
+      "terms": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_id": "kotler",
+      "downloaded_at": "2026-10-06T11:39:11.645470+08:00",
+      "validated_at": "2026-10-06T13:39:15.127721+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "alphamissense": {
+      "version": {
+        "prediction_publication_year": 2023,
+        "entry_id": "AF-P04637-F1",
+        "hosting_structure_version": 6,
+        "note": "AF structure version is hosting metadata, not a new AlphaMissense model release; scores fixed by hash"
+      },
+      "scope": "exact protein substitutions; computational prediction, not a functional experiment",
+      "files": [
+        {
+          "name": "P04637_api.json",
+          "url": "https://alphafold.ebi.ac.uk/api/prediction/P04637",
+          "bytes": 18911,
+          "md5": "bca2ba2a0e263e88b62f17e1f8ec1888",
+          "sha256": "1ef436288de2bfd9dbc9a24147b758fbe09bd4a1e27db56d0ced3e5bac215589"
+        },
+        {
+          "name": "AF-P04637-F1-aa-substitutions.csv",
+          "url": "https://alphafold.ebi.ac.uk/files/AF-P04637-F1-aa-substitutions.csv",
+          "bytes": 141628,
+          "md5": "d02c8f1925c48f7757d42fc2339d6384",
+          "sha256": "ad07bb5ea507288bdf5145dbb64d9b76eb699647dfe989e3918019107dce98b5"
+        }
+      ],
+      "terms": "https://creativecommons.org/licenses/by/4.0/",
+      "source_id": "alphamissense",
+      "downloaded_at": "2026-10-06T11:39:11.647571+08:00",
+      "validated_at": "2026-10-06T13:39:15.129663+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    },
+    "blanden2020": {
+      "version": "eLife 61487 v2; Figure 3/4 source data 1; 2020",
+      "scope": "purified DBD: apo stability/zinc affinity at 10 C; DNA binding at 4 C; exact substitutions",
+      "files": [
+        {
+          "name": "elife-61487-fig3-data1-v2.docx",
+          "url": "https://cdn.elifesciences.org/articles/61487/elife-61487-fig3-data1-v2.docx",
+          "bytes": 21764,
+          "md5": "9ea9f168055b74e7c737086881131c49",
+          "sha256": "9961e49459f199d8cfb8d9022688587ed8b2c3b8c4be107f1e8fbf1c5909ab0d"
+        },
+        {
+          "name": "elife-61487-fig4-data1-v2.docx",
+          "url": "https://cdn.elifesciences.org/articles/61487/elife-61487-fig4-data1-v2.docx",
+          "bytes": 18164,
+          "md5": "27e688964d7ab59bafe95b5100173155",
+          "sha256": "e5b873f554783194a05a4602f86b56bcdd93b3eee45c19844c5d74320da3e845"
+        },
+        {
+          "name": "elife-61487-v2.pdf",
+          "url": "https://cdn.elifesciences.org/articles/61487/elife-61487-v2.pdf",
+          "bytes": 1916231,
+          "md5": "0e301a2d20e61b4e4fe780d484185d90",
+          "sha256": "b2fc4d87e3d3ef79ba65e61846cecb2a92fabe895aed5bfdf39761eafe155e24"
+        }
+      ],
+      "terms": "https://creativecommons.org/licenses/by/4.0/",
+      "source_id": "blanden2020",
+      "downloaded_at": "2026-10-06T13:16:47.993918+08:00",
+      "validated_at": "2026-10-06T13:39:15.135679+08:00",
+      "access": "public download",
+      "redistribution": "Not asserted; retain upstream terms and verify before distributing"
+    }
+  },
+  "variant_n": 7467,
+  "structural_measured_n": 23,
+  "public_json_sha256": "6e4576a21ef61d6c125413cec279e1ab8427bd2bfc96521467b4ac509d6b186e",
+  "public_json_bytes": 5461417,
+  "exported_fields": [
+    "public experimental ranks and values",
+    "public curated classes",
+    "public sequence and exon boundaries"
+  ],
+  "patient_data_exported": false
+}

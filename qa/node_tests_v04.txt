@@ -1,0 +1,21 @@
+✔ public data matches SHA256 and has exact variant reference (23.190791ms)
+✔ all 3546 coding SNVs agree with the audited Python core (16.654ms)
+✔ both RefSeq tails: all 4716 del/dup consequences and PTCs agree (185.041458ms)
+✔ representative source axes and NMD retain canonical core behavior (3.286667ms)
+✔ hierarchical weights do not count 8 promoters or 2 Gia conditions as extra families (0.1135ms)
+✔ missing observations expand compatibility range without zero imputation (0.083625ms)
+✔ all possible outcomes stay in 0-100 with valid nonnegative weights (0.840375ms)
+✔ changing valid weights changes research index and preserves raw data (0.109834ms)
+✔ non-missense does not borrow measurements or automatically imply no protein (0.287708ms)
+✔ variant-specific structure not borrowed and censored DNA remains a bound (0.150417ms)
+✔ identity and splice gates hold allele-level application (0.115792ms)
+✔ user protein evidence and experimental values do not overwrite public scores (0.134416ms)
+✔ invalid and unsupported HGVS do not silently switch identities (0.119ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 387.90825

@@ -1,0 +1,5 @@
+docs/data/public.json
+.cache/
+qa/*preview*
+__pycache__/
+.DS_Store
